@@ -7,6 +7,10 @@ module.exports = (sequelize, DataTypes) => {
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
      */
+
+    /**
+      Adding support for Stripe Payment Method
+    */
     static associate({ User, Product }) {
       // define association here
       Cart.belongsTo(User, { foreignKey: "idUser" });
