@@ -19,7 +19,7 @@ export default function CartProduct() {
 
   const handleProcess = () => {
     if (user !== null) {
-      navigate("/checkout");
+      navigate("https://buy.stripe.com/test_dR6bJk4DNdCncxy9AB");
     } else {
       navigate("/login");
     }
